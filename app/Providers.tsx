@@ -1,24 +1,31 @@
 'use client';
 
-import { ThemeProvider, Typography, createTheme } from '@mui/material';
-import { NextFont } from 'next/dist/compiled/@next/font';
+import {
+  CssBaseline,
+  ThemeProvider,
+  Typography,
+  createTheme,
+} from '@mui/material';
 import { ReactNode } from 'react';
 
 interface Props {
   children: ReactNode;
-  fontName: NextFont;
 }
 
 const theme = createTheme({
   typography: {
     fontFamily: '"Fira Code", cursive',
   },
+  palette: {
+    mode: 'dark',
+  },
 });
 
-const Providers = ({ children, fontName }: Props) => {
+const Providers = ({ children }: Props) => {
   return (
-    <ThemeProvider className-={fontName} theme={theme}>
-      <Typography>{children}</Typography>
+    <ThemeProvider theme={theme}>
+      <CssBaseline />
+      <body>{children}</body>
     </ThemeProvider>
   );
 };
