@@ -20,7 +20,7 @@ const ContainerBlock = ({ children }) => {
         <meta name='robots' content='follow, index' />
         <meta content={meta.description} name='description' />
       </Head>
-      <main className='dark: bg-gray-50 w-full'>
+      <main className='dark:bg-black w-full'>
         <Navbar />
         <div>{children}</div>
       </main>
