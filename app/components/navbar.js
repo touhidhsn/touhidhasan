@@ -17,10 +17,10 @@ const Navbar = () => {
       <div className='flex  md:flex-row justify-between items-center'>
         <div className='flex flex-col'>
           <Link href='/'>
-            <h1 className='font-semibold text-xl dark:text-gray-100'>
+            <h1 className='font-semibold text-xl text-gray-700 dark:text-gray-800'>
               Touhid Hasan
             </h1>
-            <p className='text-base font-light text-gray-500 dark:text-gray-300'>
+            <p className='text-base font-light text-gray-700 dark:text-gray-200'>
               Software developer
             </p>
           </Link>
@@ -32,7 +32,7 @@ const Navbar = () => {
             className={`text-base  ${
               router.asPath === '/about'
                 ? 'text-gray-800 font-bold dark:text-gray-400'
-                : 'text-gray-600 dark:text-gray-300 font-normal '
+                : 'text-gray-600 dark:text-gray-200 font-normal '
             }`}>
             About{' '}
             {router.asPath === '/about' && (
@@ -55,7 +55,7 @@ const Navbar = () => {
             className={`text-base  ${
               router.asPath === '/projects'
                 ? 'text-gray-800 font-bold dark:text-gray-400'
-                : 'text-gray-600 dark:text-gray-300 font-normal '
+                : 'text-gray-600 dark:text-gray-200 font-normal '
             }`}>
             Projects
             {router.asPath === '/projects' && (
@@ -78,7 +78,7 @@ const Navbar = () => {
             className={`text-base  ${
               router.asPath === '/experience'
                 ? 'text-gray-800 font-bold dark:text-gray-400'
-                : 'text-gray-600 dark:text-gray-300 font-normal '
+                : 'text-gray-600 dark:text-gray-200 font-normal '
             }`}>
             Experience{' '}
             {router.asPath === '/experience' && (
@@ -101,7 +101,7 @@ const Navbar = () => {
             className={`text-base  ${
               router.asPath === '/contact'
                 ? 'text-gray-800 font-bold dark:text-gray-400'
-                : 'text-gray-600 dark:text-gray-300 font-normal '
+                : 'text-gray-600 dark:text-gray-200 font-normal '
             }`}>
             Contact
             {router.asPath === '/contact' && (
@@ -121,7 +121,9 @@ const Navbar = () => {
           </Link>
         </div>
         <div className='space-x-4 flex flex-row items-center'>
-          <a href='' x>
+          <a
+            href=''
+            className='text-base font-normal text-gray-600 dark:text-gray-200'>
             <svg
               xmlns='http://www.w3.org/2000/svg'
               width='16'
@@ -134,7 +136,7 @@ const Navbar = () => {
           </a>
           <a
             href=''
-            className='text-base font-normal text-gray-600 dark:text-gray-300'>
+            className='text-base font-normal text-gray-600 dark:text-gray-200'>
             <svg
               xmlns='http://www.w3.org/2000/svg'
               width='16'
@@ -147,7 +149,7 @@ const Navbar = () => {
           </a>
           <a
             href=''
-            className='text-base font-normal text-gray-600 dark:text-gray-300'>
+            className='text-base font-normal text-gray-600 dark:text-gray-200'>
             <svg
               xmlns='http://www.w3.org/2000/svg'
               width='16'
