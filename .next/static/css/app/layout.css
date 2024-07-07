@@ -684,8 +684,22 @@ video {
   color: rgb(234 179 8 / var(--tw-text-opacity));
 }
 
+@import '/styles/fonts.css';
+
+html,
 body {
-  color: black;
+  padding: 0;
+  margin: 0;
+  font-family: 'Inter var', -apple-system, BlinkMacSystemFont, Segoe UI, Roboto,
+    Oxygen, Ubuntu, Cantarell, Fira Sans, Droid Sans, Helvetica Neue, sans-serif;
+}
+a {
+  color: inherit;
+  text-decoration: none;
+}
+
+* {
+  box-sizing: border-box;
 }
 
 .focus\:outline-none:focus {
