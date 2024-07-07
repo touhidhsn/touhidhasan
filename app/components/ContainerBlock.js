@@ -1,6 +1,6 @@
 import Head from 'next/head';
 import React from 'react';
-import Navbar from './navbar';
+import Navbar from './Navbar';
 
 const ContainerBlock = ({ children }) => {
   const meta = {
