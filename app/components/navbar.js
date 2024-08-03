@@ -17,7 +17,7 @@ const Navbar = () => {
       <div className='flex  md:flex-row justify-between items-center'>
         <div className='flex flex-col'>
           <Link href='/'>
-            <h1 className='font-semibold text-xl text-gray-700 dark:text-gray-800'>
+            <h1 className='font-semibold text-xl text-gray-700 dark:text-gray-100'>
               Touhid Hasan
             </h1>
             <p className='text-base font-light text-gray-700 dark:text-gray-200'>
