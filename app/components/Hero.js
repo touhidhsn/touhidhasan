@@ -5,9 +5,11 @@ import { RainbowHighlight } from './RainbowHighlight.js';
 const Hero = () => {
   return (
     <div>
-      <RoughNotationGroup show={true}>
-        <RainbowHighlight color={'#FF0000'}>Web developer</RainbowHighlight>
-      </RoughNotationGroup>
+      <div className='w-full md:w-1/2 mx-auto text-center md:text-left lg:p-20'>
+        <RoughNotationGroup show={true}>
+          <RainbowHighlight color={'#FF0000'}>Web developer</RainbowHighlight>
+        </RoughNotationGroup>
+      </div>
     </div>
   );
 };
