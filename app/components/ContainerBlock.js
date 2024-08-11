@@ -10,21 +10,23 @@ const ContainerBlock = ({ children }) => {
   };
 
   return (
-    <ThemeProvider
-      attribute='class'
-      defaultTheme='system'
-      enableSystem
-      disableTransitionOnChange>
+    <>
       <Head>
         <title>{meta.title}</title>
         <meta name='robots' content='follow, index' />
         <meta content={meta.description} name='description' />
       </Head>
-      <main className='dark:bg-black w-full'>
-        <Navbar />
-        <div>{children}</div>
-      </main>
-    </ThemeProvider>
+      <ThemeProvider
+        attribute='class'
+        defaultTheme='system'
+        enableSystem
+        disableTransitionOnChange>
+        <main className='dark:bg-black w-full'>
+          <Navbar />
+          <div>{children}</div>
+        </main>
+      </ThemeProvider>
+    </>
   );
 };
 
