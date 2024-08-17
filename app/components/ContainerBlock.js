@@ -1,7 +1,6 @@
 import Head from 'next/head';
 import React from 'react';
 import Navbar from './navbar.js';
-import ThemeProvider from './ThemeProvider.js';
 
 const ContainerBlock = ({ children }) => {
   const meta = {
@@ -16,16 +15,11 @@ const ContainerBlock = ({ children }) => {
         <meta name='robots' content='follow, index' />
         <meta content={meta.description} name='description' />
       </Head>
-      <ThemeProvider
-        attribute='class'
-        defaultTheme='system'
-        enableSystem
-        disableTransitionOnChange>
-        <main className='dark:bg-black w-full'>
-          <Navbar />
-          <div>{children}</div>
-        </main>
-      </ThemeProvider>
+
+      <main className='dark:bg-black w-full'>
+        <Navbar />
+        <div>{children}</div>
+      </main>
     </>
   );
 };
