@@ -8,6 +8,7 @@ const Home = () => {
     <ContainerBlock>
       <Hero />
       <FavouriteProjects />
+      <LatestCode />
     </ContainerBlock>
   );
 };
