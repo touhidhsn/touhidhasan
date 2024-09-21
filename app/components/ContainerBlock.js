@@ -1,6 +1,7 @@
 import Head from 'next/head';
 import React from 'react';
 import Navbar from './navbar.js';
+import Footer from './Footer.jsx';
 
 const ContainerBlock = ({ children }) => {
   const meta = {
@@ -19,6 +20,7 @@ const ContainerBlock = ({ children }) => {
       <main className='dark:bg-black w-full'>
         <Navbar />
         <div>{children}</div>
+        <Footer />
       </main>
     </>
   );
