@@ -1,4 +1,26 @@
-import React, { useEffect, useState } from 'react';
+import React from 'react';
+
+const repos = [
+  {
+    id: 1,
+    name: 'issuetracker',
+    description:
+      'Issue Tracking web application, developed both front and backend',
+    url: 'https://github.com/touhidhsn/issuetracker',
+  },
+  {
+    id: 2,
+    name: 'deliveryfoodlandingpage',
+    description: 'Developed fronted',
+    url: 'https://github.com/touhidhsn/deliveryfoodlandingpage',
+  },
+  {
+    id: 3,
+    name: 'gamehub',
+    description: 'Complete game review website with multy filter function',
+    url: 'https://github.com/touhidhsn/gamehub',
+  },
+];
 
 export default function LatestCode() {
   return (
@@ -10,7 +32,7 @@ export default function LatestCode() {
           </h1>
 
           <a
-            href={`https://github.com/touhidhsn`}
+            href='https://github.com/touhidhsn'
             className='mb-20 md:mb-0 px-8 py-4 rounded-md bg-white shadow-lg text-xl font-semibold flex flex-row space-x-4 items-center dark:text-gray-700'>
             <svg
               xmlns='http://www.w3.org/2000/svg'
@@ -31,22 +53,24 @@ export default function LatestCode() {
         </div>
       </div>
       <div className='grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8 max-w-6xl mx-auto px-10 lg:-mt-10 gap-y-20'>
-        <div className='github-repo'>
-          <h1 className='font-semibold text-xl dark:text-gray-200 text-gray-700'>
-            Heading check
-          </h1>
-          <p className='text-base font-normal my-4 text-gray-500'>
-            Content Check
-          </p>
-          <a
-            href='#'
-            className='font-semibold group flex flex-row space-x-2 w-full items-center'>
-            <p>View Repository </p>
-            <div className='transform  group-hover:translate-x-2 transition duration-300'>
-              check
-            </div>
-          </a>
-        </div>
+        {repos.map((repo) => (
+          <div className='github-repo' key={repo.id}>
+            <h1 className='font-semibold text-xl dark:text-gray-200 text-gray-700'>
+              {repo.name}
+            </h1>
+            <p className='text-base font-normal my-4 text-gray-500'>
+              {repo.description}
+            </p>
+            <a
+              href={repo.url}
+              className='font-semibold group flex flex-row space-x-2 w-full items-center'>
+              <p>View Repository </p>
+              <div className='transform  group-hover:translate-x-2 transition duration-300'>
+                &rarr;
+              </div>
+            </a>
+          </div>
+        ))}
       </div>
     </section>
   );
