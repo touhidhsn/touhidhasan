@@ -1,4 +1,15 @@
 import React from 'react';
+import figma from '../images/figma.png';
+import js from '../images/javascript.png';
+import typescript from '../images/typescript.png';
+import html from '../images/html.png';
+import css from '../images/css.png';
+import tailwindcss from '../images/tailwind.png';
+import react from '../images/react.png';
+import vscode from '../images/vscode.png';
+
+import Image from 'next/image.js';
+
 export default function AboutMe() {
   return (
     <section className='bg-white dark:bg-gray-800'>
@@ -12,11 +23,7 @@ export default function AboutMe() {
           <p
             className='leading-loose text-2xl md:text-4xl font-semibold  mx-4'
             style={{ lineHeight: '3rem' }}>
-            I'm a software developer & UI designer. Currently working on
-            Currently working on
-            <a className='bg-red-500 rounded-md px-2 py-1 text-white' href='#'>
-              Admin Panel Project ✈️
-            </a>
+            I'm a software developer & UI designer
           </p>
         </div>
       </div>
@@ -128,62 +135,52 @@ export default function AboutMe() {
             </div>
           </div>
           {/* Text area */}
-          <div className='col-span-1 md:col-span-2'>
+          <div
+            className='col-span-1 md:col-span-2'
+            style={{ lineHeight: '3rem' }}>
+            <h2 className='bg-red-500 text-3xl rounded-md px-2 py-1 my-8 inline-block font-bold text-gray-50'>
+              Expertise in Front-End Technologies
+            </h2>
+
             <p className='text-xl text-gray-700 mb-4 dark:text-gray-300 '>
-              Check
+              Experienced web developer with expertise in HTML, CSS, JavaScript,
+              TypeScript, and React, along with knowledge of Figma for UI/UX
+              design. My strong problem-solving skills enable me to tackle
+              complex coding challenges and optimize performance. <br /> I have
+              a proven track record of building scalable, responsive web
+              applications, merging design and development seamlessly. With a
+              focus on clean, maintainable code and a passion for creating
+              intuitive user experiences, I bring a blend of technical and
+              creative abilities to every project.
             </p>
 
-            <h1 className='bg-red-500 text-3xl rounded-md px-2 py-1 inline-block font-bold text-gray-50'>
+            <h1 className='bg-red-500 text-3xl rounded-md px-2 py-1 mt-8 inline-block font-bold text-gray-50'>
               Tech Stack
             </h1>
+            <div className='flex flex-row flex-wrap my-8'>
+              <Image src={html} className='h-20 w-20 mx-4 my-4' alt='HTML' />
+              <Image src={css} className='h-20 w-20 mx-4 my-4' alt='css' />
+              <Image
+                src={js}
+                className='h-20 w-20 mx-4 my-4'
+                alt='javascript'
+              />
+              <Image
+                src={typescript}
+                className='h-20 w-20 mx-4 my-4'
+                alt='typescript'
+              />
+              <Image src={react} className='h-20 w-20 mx-4 my-4' alt='React' />
+            </div>
+            <h1 className='bg-red-500 text-3xl rounded-md px-2 py-1 mt-8 inline-block font-bold text-gray-50'>
+              Software I love
+            </h1>
             <div className='flex flex-row flex-wrap mt-8'>
-              <img
-                src='https://raw.githubusercontent.com/github/explore/80688e429a7d4ef2fca1e82350fe8e3517d3494d/topics/javascript/javascript.png'
+              <Image src={figma} className='h-20 w-20 mx-4 my-4' alt='Figma' />
+              <Image
+                src={vscode}
                 className='h-20 w-20 mx-4 my-4'
-              />
-              <img
-                src='https://raw.githubusercontent.com/github/explore/80688e429a7d4ef2fca1e82350fe8e3517d3494d/topics/java/java.png'
-                className='h-20 w-20 mx-4 my-4'
-              />
-              <img
-                src='https://raw.githubusercontent.com/github/explore/80688e429a7d4ef2fca1e82350fe8e3517d3494d/topics/typescript/typescript.png'
-                className='h-20 w-20 mx-4 my-4'
-              />
-              <img
-                src='https://raw.githubusercontent.com/github/explore/80688e429a7d4ef2fca1e82350fe8e3517d3494d/topics/html/html.png'
-                className='h-20 w-20 mx-4 my-4'
-              />
-              <img
-                src='https://raw.githubusercontent.com/github/explore/80688e429a7d4ef2fca1e82350fe8e3517d3494d/topics/css/css.png'
-                className='h-20 w-20 mx-4 my-4'
-              />
-              <img
-                src='https://raw.githubusercontent.com/github/explore/80688e429a7d4ef2fca1e82350fe8e3517d3494d/topics/angular/angular.png'
-                className='h-20 w-20 mx-4 my-4'
-              />
-              <img
-                src='https://raw.githubusercontent.com/github/explore/80688e429a7d4ef2fca1e82350fe8e3517d3494d/topics/vue/vue.png'
-                className='h-20 w-20 mx-4 my-4'
-              />
-              <img
-                src='https://raw.githubusercontent.com/github/explore/80688e429a7d4ef2fca1e82350fe8e3517d3494d/topics/git/git.png'
-                className='h-20 w-20 mx-4 my-4'
-              />
-              <img
-                src='https://raw.githubusercontent.com/github/explore/80688e429a7d4ef2fca1e82350fe8e3517d3494d/topics/react/react.png'
-                className='h-20 w-20 mx-4 my-4'
-              />
-              <img
-                src='https://raw.githubusercontent.com/github/explore/80688e429a7d4ef2fca1e82350fe8e3517d3494d/topics/firebase/firebase.png'
-                className='h-20 w-20 mx-4 my-4'
-              />
-              <img
-                src='https://raw.githubusercontent.com/github/explore/80688e429a7d4ef2fca1e82350fe8e3517d3494d/topics/mysql/mysql.png'
-                className='h-20 w-20 mx-4 my-4'
-              />
-              <img
-                src='https://raw.githubusercontent.com/github/explore/80688e429a7d4ef2fca1e82350fe8e3517d3494d/topics/mongodb/mongodb.png'
-                className='h-20 w-20 mx-4 my-4'
+                alt='VS Code'
               />
             </div>
           </div>
