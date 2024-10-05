@@ -1,7 +1,6 @@
 import React from 'react';
 import userData from '../constants/data';
 import Image from 'next/image';
-import asoleki from '../images/growthapp.jpg';
 
 export default function Projects() {
   return (
@@ -23,9 +22,6 @@ export default function Projects() {
             />
           ))}
         </div>
-        <div className='max-w-6xl mx-auto grid grid-cols-1 md:grid-cols-2 gap-8 py-20 pb-40'>
-          <ProjectCard title='hello' link='' imgUrl={asoleki} number='2' />
-        </div>
       </div>
     </section>
   );
@@ -33,7 +29,7 @@ export default function Projects() {
 
 const ProjectCard = ({ title, link, imgUrl, number }) => {
   return (
-    <a href={link} className='w-full block shadow-2xl'>
+    <div className='w-full block shadow-2xl'>
       <div className='relative overflow-hidden'>
         <div className='h-72 object-cover'>
           <Image
@@ -51,6 +47,6 @@ const ProjectCard = ({ title, link, imgUrl, number }) => {
           {number.length === 1 ? '0' + number : number}
         </h1>
       </div>
-    </a>
+    </div>
   );
 };
