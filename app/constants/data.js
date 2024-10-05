@@ -23,6 +23,23 @@ const userData = {
       imgUrl: jobreview,
     },
   ],
+
+  experience: [
+    {
+      title: 'Software Developer',
+      company: 'mroads',
+      year: '2021',
+      companyLink: 'https://mroads.com',
+      desc: 'Contributed to our flagship product - Panna - which is an AI powered candidate interviewing product.',
+    },
+    {
+      title: 'Grahpic Designer',
+      company: '24hourwristband.com',
+      year: '2019',
+      companyLink: 'https://imprint.com',
+      desc: 'I have been working as a senior designer. My responsible to check artwork quality, redesign as customers deman and make sure order ready for production.',
+    },
+  ],
 };
 
 export default userData;
