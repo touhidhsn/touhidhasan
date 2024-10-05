@@ -159,7 +159,12 @@ export default function AboutMe() {
             </h1>
             <div className='flex flex-row flex-wrap my-8'>
               <Image src={html} className='h-20 w-20 mx-4 my-4' alt='HTML' />
-              <Image src={css} className='h-20 w-20 mx-4 my-4' alt='css' />
+              <Image src={css} className='h-20 w-20 mx-4 my-4' alt='css' />{' '}
+              <Image
+                src={tailwindcss}
+                className='h-20 w-20 mx-4 my-4'
+                alt='Tailwind CSS'
+              />
               <Image
                 src={js}
                 className='h-20 w-20 mx-4 my-4'
