@@ -29,6 +29,24 @@ const userData = {
       imgUrl: jobreview,
     },
   ],
+  socialLinks: [
+    {
+      title: 'Facebook',
+      link: 'fb.com/touhidhs',
+    },
+    {
+      title: 'Instagram',
+      link: 'www.instagram.com/thdhsn',
+    },
+    {
+      title: 'GitHub',
+      link: 'github.com/touhidhsn',
+    },
+    {
+      title: 'Behance',
+      link: 'www.behance.net/thdhsn9ab0',
+    },
+  ],
 
   experience: [
     {
@@ -46,6 +64,7 @@ const userData = {
       desc: 'I have been working as a senior designer. My responsible to check artwork quality, redesign as customers deman and make sure order ready for production.',
     },
   ],
+  aboutMe: `Experienced web developer with expertise in HTML, CSS, JavaScript, TypeScript, and React, along with knowledge of Figma for UI/UX design. I have also worked with Wordpress customization. My strong problem-solving skills enable me to tackle complex coding challenges and optimize performance. I have a proven track record of building scalable, responsive web applications, merging design and development seamlessly. With a focus on clean, maintainable code and a passion for creating intuitive user experiences, I bring a blend of technical and creative abilities to every project.`,
 };
 
 export default userData;
