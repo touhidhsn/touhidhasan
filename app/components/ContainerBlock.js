@@ -17,7 +17,7 @@ const ContainerBlock = ({ children }) => {
         <meta content={meta.description} name='description' />
       </Head>
 
-      <main className='dark:bg-black w-full'>
+      <main className='dark:bg-gray-800 w-full'>
         <Navbar />
         <div>{children}</div>
         <Footer />
