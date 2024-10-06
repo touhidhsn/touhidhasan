@@ -8,7 +8,7 @@ export default function Contact() {
           Contact
         </h1>
       </div>
-      <div className='relative z-10 rounded-md shadow-md bg-[#02044A] p-4 md:p-10 lg:p-20 max-w-6xl mx-auto mb-20 -mt-4'>
+      <div className='relative z-10 rounded-md shadow-md bg-[#1f2043] p-4 md:p-10 lg:p-20 max-w-6xl mx-auto mb-20 -mt-4'>
         <div className='grid grid-cols-1 md:grid-cols-2 gap-4'>
           <div className='md:ml-4'>
             <header className=''>
@@ -20,7 +20,7 @@ export default function Contact() {
               </p>
             </header>
             <div className='icons-container inline-flex flex-col my-20'>
-              <div className='flex flex-row items-center space-x-6 rounded-md border border-[#02044A] hover:border hover:border-blue-500 p-4'>
+              <div className='flex flex-row items-center space-x-6 rounded-md border border-[#7470DA] hover:border hover:border-blue-500 p-4'>
                 <svg
                   xmlns='http://www.w3.org/2000/svg'
                   width='16'
@@ -35,7 +35,7 @@ export default function Contact() {
                 </svg>
                 <p className='text-gray-50 font-light text-sm'>01717787275</p>
               </div>
-              <div className='flex flex-row items-center space-x-6 rounded-md border border-[#02044A] hover:border hover:border-blue-500 p-4'>
+              <div className='flex flex-row items-center space-x-6 rounded-md border border-[#7470DA] hover:border hover:border-blue-500 p-4'>
                 <svg
                   xmlns='http://www.w3.org/2000/svg'
                   width='16'
@@ -49,7 +49,7 @@ export default function Contact() {
                   touhidhsn@gmail.com
                 </p>
               </div>
-              <div className='flex flex-row items-center space-x-6 rounded-md border border-[#02044A] hover:border hover:border-blue-500 p-4'>
+              <div className='flex flex-row items-center space-x-6 rounded-md border border-[#7470DA] hover:border hover:border-blue-500 p-4'>
                 <svg
                   xmlns='http://www.w3.org/2000/svg'
                   width='16'

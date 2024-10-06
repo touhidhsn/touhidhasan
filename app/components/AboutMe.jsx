@@ -7,8 +7,10 @@ import css from '../images/css.png';
 import tailwindcss from '../images/tailwind.png';
 import react from '../images/react.png';
 import vscode from '../images/vscode.png';
+import wordpress from '../images/wordpress.png';
 
 import Image from 'next/image.js';
+import userData from '../constants/data';
 
 export default function AboutMe() {
   return (
@@ -31,20 +33,19 @@ export default function AboutMe() {
         <div className='pt-20 grid grid-cols-1 md:grid-cols-3 max-w-6xl mx-auto gap-y-20 gap-x-20'>
           {/* Social Buttons */}
           <div className='inline-flex flex-col'>
-            <div>
-              <h1 className='text-xl font-semibold text-gray-700 dark:text-gray-200'>
-                Contact
-              </h1>
-              <p className='text-lg text-gray-500 mt-4 dark:text-gray-300'>
-                For any sort help / enquiry, shoot a{' '}
-                <a
-                  href={`mailto:$touhidhsn@gmail.com`}
-                  className='text-gray-800 border-b-2 border-gray-800 dark:border-gray-300 font-bold dark:text-gray-300'>
-                  mail
-                </a>{' '}
-                and I'll get back insha allah.
-              </p>
-            </div>
+            <h1 className='text-xl font-semibold text-gray-700 dark:text-gray-200'>
+              Contact
+            </h1>
+            <p className='text-lg text-gray-500 mt-4 dark:text-gray-300'>
+              For any sort help / enquiry, shoot a{' '}
+              <a
+                href={`mailto:$touhidhsn@gmail.com`}
+                className='text-gray-800 border-b-2 border-gray-800 dark:border-gray-300 font-bold dark:text-gray-300'>
+                mail
+              </a>{' '}
+              and I'll get back Insha Allah.
+            </p>
+
             <div className='mt-8'>
               <h1 className='text-xl font-semibold text-gray-700 dark:text-gray-200'>
                 Job Opportunities
@@ -66,72 +67,19 @@ export default function AboutMe() {
               Social Links
             </h1>
             <div className='mt-4 ml-4'>
-              <div className='flex flex-row justify-start items-center '>
-                <a
-                  href='#'
-                  className='flex flex-row items-center space-x-4 group'>
-                  <div className='my-4'>&rarr;</div>
-                  <div className='text-lg text-gray-500 font-mono relative overflow-hidden dark:text-gray-300'>
-                    <div className='absolute h-0.5 w-full bg-gray-400 bottom-0 transform -translate-x-24 group-hover:translate-x-0 transition duration-300'></div>
-                    Peerlist
-                  </div>
-                </a>
-              </div>
-              <div className='flex flex-row justify-start items-center '>
-                <a
-                  href='#'
-                  className='flex flex-row items-center space-x-4 group'>
-                  <div className='my-4'>&rarr;</div>
-                  <div className='text-lg text-gray-500 font-mono relative overflow-hidden dark:text-gray-300'>
-                    <div className='absolute h-0.5 w-full bg-gray-400 bottom-0 transform -translate-x-24 group-hover:translate-x-0 transition duration-300'></div>
-                    Facebook
-                  </div>
-                </a>
-              </div>
-              <div className='flex flex-row justify-start items-center'>
-                <a
-                  href='#'
-                  className='flex flex-row items-center space-x-4 group'>
-                  <div className='my-4'>&rarr;</div>
-                  <div className='text-lg text-gray-500 font-mono relative overflow-hidden dark:text-gray-300'>
-                    <div className='absolute h-0.5 w-full bg-gray-400 bottom-0 transform -translate-x-24 group-hover:translate-x-0 transition duration-300'></div>
-                    Twitter
-                  </div>
-                </a>
-              </div>
-              <div className='flex flex-row justify-start items-center'>
-                <a
-                  href='#'
-                  className='flex flex-row items-center space-x-4 group'>
-                  <div className='my-4'>&rarr;</div>
-                  <div className='text-lg text-gray-500 font-mono relative overflow-hidden dark:text-gray-300'>
-                    <div className='absolute h-0.5 w-full bg-gray-400 bottom-0 transform -translate-x-24 group-hover:translate-x-0 transition duration-300'></div>
-                    GitHub
-                  </div>
-                </a>
-              </div>
-              <div className='flex flex-row justify-start items-center'>
-                <a
-                  href='#'
-                  className='flex flex-row items-center space-x-4 group'>
-                  <div className='my-4'>&rarr;</div>
-                  <div className='text-lg text-gray-500 font-mono relative overflow-hidden dark:text-gray-300'>
-                    <div className='absolute h-0.5 w-full bg-gray-400 bottom-0 transform -translate-x-24 group-hover:translate-x-0 transition duration-300'></div>
-                    LinkedIn
-                  </div>
-                </a>
-              </div>
-              <div className='flex flex-row justify-start items-center'>
-                <a
-                  href='#'
-                  className='flex flex-row items-center space-x-4 group'>
-                  <div className='my-4'>&rarr;</div>
-                  <div className='text-lg text-gray-500 font-mono relative overflow-hidden dark:text-gray-300'>
-                    <div className='absolute h-0.5 w-full bg-gray-400 bottom-0 transform -translate-x-28 group-hover:translate-x-0 transition duration-300'></div>
-                    Instagram
-                  </div>
-                </a>
-              </div>
+              {userData.socialLinks.map((socialLink) => (
+                <div className='flex flex-row justify-start items-center '>
+                  <a
+                    href={socialLink.link}
+                    className='flex flex-row items-center space-x-4 group'>
+                    <div className='my-4'>&rarr;</div>
+                    <div className='text-lg text-gray-500 font-mono relative overflow-hidden dark:text-gray-300'>
+                      <div className='absolute h-0.5 w-full bg-gray-400 bottom-0 transform -translate-x-24 group-hover:translate-x-0 transition duration-300'></div>
+                      {socialLink.title}
+                    </div>
+                  </a>
+                </div>
+              ))}
             </div>
           </div>
           {/* Text area */}
@@ -143,15 +91,7 @@ export default function AboutMe() {
             </h2>
 
             <p className='text-xl text-gray-700 mb-4 dark:text-gray-300 '>
-              Experienced web developer with expertise in HTML, CSS, JavaScript,
-              TypeScript, and React, along with knowledge of Figma for UI/UX
-              design. My strong problem-solving skills enable me to tackle
-              complex coding challenges and optimize performance. <br /> I have
-              a proven track record of building scalable, responsive web
-              applications, merging design and development seamlessly. With a
-              focus on clean, maintainable code and a passion for creating
-              intuitive user experiences, I bring a blend of technical and
-              creative abilities to every project.
+              {userData.aboutMe}
             </p>
 
             <h1 className='bg-red-500 text-3xl rounded-md px-2 py-1 mt-8 inline-block font-bold text-gray-50'>
@@ -176,6 +116,11 @@ export default function AboutMe() {
                 alt='typescript'
               />
               <Image src={react} className='h-20 w-20 mx-4 my-4' alt='React' />
+              <Image
+                src={wordpress}
+                className='h-20 w-20 mx-4 my-4'
+                alt='WordPress'
+              />
             </div>
             <h1 className='bg-red-500 text-3xl rounded-md px-2 py-1 mt-8 inline-block font-bold text-gray-50'>
               Software I love
