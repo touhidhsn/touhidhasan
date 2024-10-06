@@ -4,6 +4,12 @@ import jobreview from '../images/jobpreview.jpg';
 
 const userData = {
   avatarUrl: '../images/thavatar.png',
+  navLinks: [
+    { title: 'About', path: '/about' },
+    { title: 'Projects', path: '/projects' },
+    { title: 'Experience', path: '/experience' },
+    { title: 'Contact', path: '/contact' },
+  ],
 
   projects: [
     {
