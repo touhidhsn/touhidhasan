@@ -32,19 +32,19 @@ const userData = {
   socialLinks: [
     {
       title: 'Facebook',
-      link: 'fb.com/touhidhs',
+      link: 'http://fb.com/touhidhsn',
     },
     {
       title: 'Instagram',
-      link: 'www.instagram.com/thdhsn',
+      link: 'http://www.instagram.com/thdhsn',
     },
     {
       title: 'GitHub',
-      link: 'github.com/touhidhsn',
+      link: 'http://github.com/touhidhsn',
     },
     {
       title: 'Behance',
-      link: 'www.behance.net/thdhsn9ab0',
+      link: 'http://www.behance.net/thdhsn9ab0',
     },
   ],
 
