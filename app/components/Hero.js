@@ -16,12 +16,12 @@ const Hero = () => {
           </RainbowHighlight>
           <RainbowHighlight color={'#DA70D6'}>
             <h1 className='text-4xl md:text-8xl font-bold text-gray-700 dark:text-gray-200 my-2'>
-              Designer
+              Programmer
             </h1>
           </RainbowHighlight>
           <RainbowHighlight color={'#B95CF4'}>
             <h1 className='text-4xl md:text-8xl font-bold text-gray-700 dark:text-gray-200 my-2'>
-              Programmer
+              Designer
             </h1>
           </RainbowHighlight>
           <RainbowHighlight color={'#7470DA'}>
